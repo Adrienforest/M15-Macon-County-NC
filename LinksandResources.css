@@ -1,0 +1,116 @@
+/* Hero Banner */
+.hero-banner {
+    position: relative;
+    text-align: left;
+    background-color: #e9f1f7;
+    margin-bottom: 40px;
+  }
+  
+  .hero-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-height: 350px;
+    object-fit: cover;
+  }
+  
+  .hero-text {
+    padding: 30px 20px;
+    background-color: #ffffff;
+    margin-top: -4px;
+  }
+  
+  .hero-text h1 {
+    font-size: 2.5rem;
+    color: #002855;
+    margin-bottom: 10px;
+  }
+  
+  .hero-text p {
+    font-size: 1.1rem;
+    color: #333;
+    margin: 0;
+  }
+  
+  /* Wellness Section */
+  .wellness-section {
+    background-color: #ffffff;
+    padding: 40px 0;
+  }
+  
+  .wellness-intro {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .wellness-intro h2 {
+    font-size: 2rem;
+    color: #002855;
+    margin-bottom: 10px;
+  }
+  
+  .wellness-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  
+  .wellness-left,
+  .wellness-right {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+  
+  .resource-block {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    background-color: #f0f4f8;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  }
+  
+  .resource-block i {
+    font-size: 36px;
+    color: #002855;
+    margin-top: 5px;
+  }
+  
+  .resource-block h3 {
+    margin: 0 0 8px;
+    font-size: 1.25rem;
+    color: #002855;
+  }
+  
+  .resource-block p {
+    margin: 0 0 10px;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .btn-link {
+    display: inline-block;
+    color: #0056b3;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .btn-link:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive Layout */
+  @media (max-width: 768px) {
+    .hero-text h1 {
+      font-size: 2rem;
+    }
+  
+    .wellness-flex {
+      flex-direction: column;
+    }
+  }
+  

@@ -1,0 +1,106 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; 
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px; 
+    box-sizing: border-box;
+}
+
+
+.about-intro,
+.mission-values,
+.history {
+    padding: 40px 0;
+}
+
+/* Headings styles */
+.about-intro h1,
+.mission-values h3, 
+.history h2 {
+    color: #002855;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    text-align: center; 
+}
+
+
+.about-intro p,
+.mission-values p,
+.history p {
+    color: #333;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    text-align: center; 
+}
+
+/* Mission Box for icon and text */
+.about-mission {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Mission icon styling */
+.mission-icon {
+    margin-bottom: 20px;
+}
+
+/* FontAwesome icon sizes */
+.mission-icon i,
+.value-icon i {
+    font-size: 60px;
+    color: #002855;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    text-align: center;
+    justify-items: center; 
+}
+
+/* Values grid items header */
+.value-item h3 {
+    color: #002855;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* History image styles */
+.history-img {
+    width: 100%;
+    max-width: 800px;
+    display: block;
+    margin: 30px auto 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    
+    .about-intro h1,
+    .mission-values h3,
+    .history h2 {
+        font-size: 1.5rem;
+    }
+
+    /* Smaller icon size for mobile screens */
+    .icon {
+        width: 40px;
+    }
+
+   
+    .history-img {
+        max-width: 100%;
+    }
+}

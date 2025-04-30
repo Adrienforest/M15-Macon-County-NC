@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <title>Agendas & Minutes | Macon County, NC</title>
+        <link href="style.css" rel="stylesheet" />
+        <link href="AgendaandMinutes.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    </head>
+    <body>
+        <header class="site-header">
+            <div class="header-container">
+                <div class="logo">
+                    <a href="#">
+                    <img src="../assets/mock-macon-county-north-carolina.png" alt="Macon County North Carolina Logo">
+                </a>
+            </div>
+                 <!-- Hamburger Toggle (checkbox hack) -->
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <!-- Navigation -->
+        <nav class="nav">
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+
+                
+                <li class="dropdown">
+                    <a href="#">Departments</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="ItDepartment.html">IT Department</a></li>
+                        
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Services</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="services.html">Emergency Services</a></li>
+                        
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Forms and Documents</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="AgendaandMinutes.html">Agendas and Minutes</a></li>
+                        
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">News and Events</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="NewsandEvents.html">County News</a></li>
+                        
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="#">Links and Resources</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="LinksandResources.html">Health and Wellness Resources</a></li>
+                       
+                    </ul>
+                    </li>
+                <li class="dropdown">
+                    <a href="ContactUs.html">Contact Us</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Directory</a></li>
+                        <li><a href="#">Submit a Question</a></li>
+                    </ul>
+                </li>
+                <li><a href="Search.html">Search</a></li>
+            </ul>
+        </nav>
+            </div>
+        </header> 
+        <main class="main-content">
+            <section class="page-header">
+              <div class="container">
+                <h1>Agendas & Minutes</h1>
+                <p>Stay informed with Macon County’s latest public meeting agendas and approved minutes.</p>
+              </div>
+            </section>
+          
+            <section class="agendas-section">
+                <div class="container">
+                  <h2>Recent Meetings</h2>
+              
+                  <!-- FILTER BUTTONS must not wrap .meeting-list -->
+                  <input type="radio" name="year" id="all" checked>
+                  <label for="all">All</label>
+              
+                  <input type="radio" name="year" id="y2025">
+                  <label for="y2025">2025</label>
+              
+                  <input type="radio" name="year" id="y2024">
+                  <label for="y2024">2024</label>
+              
+                  <!-- FILTER TARGET must be a sibling, not nested -->
+                  <div class="meeting-list">
+                    <div class="meeting-item y2025">
+                      <i class="fa-solid fa-calendar-day"></i>
+                      <div>
+                        <h3>April 22, 2025 – Board of Commissioners</h3>
+                        <a href="#" class="btn-link">View Agenda</a>
+                        <a href="#" class="btn-link">View Minutes</a>
+                      </div>
+                    </div>
+              
+                    <div class="meeting-item y2025">
+                      <i class="fa-solid fa-calendar-day"></i>
+                      <div>
+                        <h3>April 8, 2025 – Planning Board</h3>
+                        <a href="#" class="btn-link">View Agenda</a>
+                        <a href="#" class="btn-link">View Minutes</a>
+                      </div>
+                    </div>
+              
+                    <div class="meeting-item y2024">
+                      <i class="fa-solid fa-calendar-day"></i>
+                      <div>
+                        <h3>December 12, 2024 – Environmental Review Board</h3>
+                        <a href="#" class="btn-link">View Agenda</a>
+                        <a href="#" class="btn-link">View Minutes</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+          </main>
+          
+          </body>
+          <footer class="site-footer">
+            <div class="container footer-grid">
+          
+              <!-- About Section -->
+              <div class="footer-about">
+                <h3>Macon County, NC</h3>
+                <p>Serving our residents with transparency, efficiency, and care since 1828.</p>
+              </div>
+          
+              <!-- Quick Links -->
+              <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="#">Departments</a></li>
+                  <li><a href="#">Services</a></li>
+                  <li><a href="#">Forms and Documents</a></li>
+                  <li><a href="#">News and Events</a></li>
+                  <li><a href="#">Links and Resources</a></li>
+                  <li><a href="ContactUs.html">Contact Us</a></li>
+                  <li><a href="services.html">Search</a></li>
+                </ul>
+              </div>
+          
+              <!-- Contact Information -->
+              <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <ul>
+                  <li><i class="fa-solid fa-location-dot"></i> 5 West Main Street, Franklin, NC 28734</li>
+                  <li><i class="fa-solid fa-phone"></i> (828) 888-8888</li>
+                  <li><i class="fa-solid fa-envelope"></i> info@maconnc.org</li>
+                </ul>
+              </div>
+          
+            </div>
+          
+            <div class="footer-bottom">
+              <div class="container">
+                <p>&copy; 2025 Macon County, NC. All rights reserved.</p>
+              </div>
+            </div>
+          </footer>
+          </html>

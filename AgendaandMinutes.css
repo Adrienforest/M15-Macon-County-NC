@@ -1,0 +1,155 @@
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+  
+  /* Header Section */
+  .page-header {
+    background-color: #002855;
+    color: #fff;
+    text-align: center;
+    padding: 40px 0;
+  }
+  
+  .page-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .page-header p {
+    font-size: 1.2rem;
+    margin: 0;
+  }
+  
+  /* Agendas Section */
+  .agendas-section {
+    padding: 40px 0;
+    background-color: #ffffff;
+  }
+  
+  .agendas-section h2 {
+    text-align: center;
+    color: #002855;
+    margin-bottom: 30px;
+    font-size: 2rem;
+  }
+  
+  /* Year Filter Styles */
+  .year-filters {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .year-filters input[type="radio"] {
+    display: none;
+
+  }
+  
+  .year-filters label {
+    display: inline-block;
+    background-color: #e9f1f7;
+    color: #002855;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 0 5px;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .year-filters input:checked + label {
+    background-color: #002855;
+    color: white;
+  }
+  
+  /* Meeting List */
+  .meeting-list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+  
+  .meeting-item {
+    display: none;
+    align-items: flex-start;
+    gap: 20px;
+    background-color: #f0f4f8;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    margin-bottom: 20px;  
+}
+  
+  .meeting-item i {
+    font-size: 32px;
+    color: #002855;
+    flex-shrink: 0;
+    margin-top: 5px;
+  }
+  
+  .meeting-item h3 {
+    margin: 0 0 10px;
+    font-size: 1.25rem;
+    color: #002855;
+  }
+  
+  .btn-link {
+    display: inline-block;
+    margin-right: 15px;
+    color: #0056b3;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .btn-link:hover {
+    text-decoration: underline;
+  }
+  
+  /* Show all */
+  #all:checked ~ .meeting-list .meeting-item {
+    display: flex;
+  }
+  
+  /* Show specific years */
+  #y2025:checked ~ .meeting-list .y2025,
+  #y2024:checked ~ .meeting-list .y2024 {
+    display: flex;
+  }
+
+  label:focus-visible {
+    outline: 2px solid #0056b3;
+    outline-offset: 3px;
+  }
+  
+  /* Mobile Adjustments */
+  @media (max-width: 768px) {
+    .page-header h1 {
+      font-size: 2rem;
+    }
+  
+    .agendas-section h2 {
+      font-size: 1.7rem;
+    }
+  
+    .meeting-item {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .meeting-item i {
+      margin-bottom: 10px;
+    }
+  }
+  

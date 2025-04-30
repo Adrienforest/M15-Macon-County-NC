@@ -1,0 +1,57 @@
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+  
+  /* Emergency Hero Header */
+  .page-header-emergency {
+    background-color: #8b0000; /* Deep red to signal urgency */
+    color: #fff;
+    text-align: center;
+    padding: 50px 0;
+  }
+  
+  .page-header-emergency h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .page-header-emergency p {
+    font-size: 1.2rem;
+    margin: 0;
+  }
+  
+  /* Emergency Services Section */
+  .emergency-section {
+    padding: 50px 0;
+    background-color: #ffffff;
+  }
+  
+  .emergency-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+  }
+  
+  .emergency-item {
+    background-color: #e9f1f7;
+    padding: 30px 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+  }
+  
+  .emergency-item i {
+    font-size: 45px;
+    color: #002855
+  }
